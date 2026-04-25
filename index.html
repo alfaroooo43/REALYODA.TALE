@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REALYODA TALE - E-book Storytelling Anak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="modal-backdrop" id="discountModal" aria-hidden="true">
+    <div class="discount-modal" role="dialog" aria-modal="true" aria-labelledby="discountTitle">
+      <button class="modal-close" id="closeModal" aria-label="Tutup popup">&times;</button>
+      <div class="gift-box">🎉</div>
+      <span class="discount-pill">50% OFF</span>
+      <h2 id="discountTitle">🎉 Diskon Spesial 50% Hari Ini!</h2>
+      <p>Khusus pembelian pertama, dapatkan potongan 50% untuk semua e-book pilihan</p>
+      <div class="urgency-box">
+        <strong>🔥 Diskon akan berakhir dalam <span id="countdownTimer">10:00</span> menit!</strong>
+        <span id="stockText">Tersisa 7 produk lagi hari ini</span>
+      </div>
+      <a class="btn btn-coral modal-cta js-wa" href="#" data-product="Paket E-book REALYODA TALE">Ambil Diskon Sekarang</a>
+      <small>Promo terbatas hanya untuk pembelian pertama</small>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a href="index.html" class="brand" aria-label="REALYODA TALE beranda">
+        <span class="brand-icon">📖</span>
+        <span>
+          <strong>REALYODA TALE</strong>
+          <small>E-book Storytelling Anak</small>
+        </span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Beranda</a>
+        <a href="koleksi.html">Koleksi</a>
+        <a href="manfaat.html">Manfaat</a>
+        <a href="testimoni.html">Testimoni</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <a class="btn btn-whatsapp header-cta js-wa" href="#" data-product="Paket E-book REALYODA TALE">Pesan via WhatsApp</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-pad" id="beranda">
+      <div class="float cloud cloud-one"></div>
+      <div class="float cloud cloud-two"></div>
+      <div class="float star star-one">✦</div>
+      <div class="float star star-two">★</div>
+      <div class="float bubble bubble-one"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Sudah dibaca oleh 1.000+ orang tua</span>
+          <h1>Bangun Imajinasi Anak Lewat <span>Cerita Bermakna</span></h1>
+          <p>Bantu anak lebih cerdas, kreatif, dan dekat dengan orang tua melalui e-book cerita hangat yang penuh nilai.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="koleksi.html">Dapatkan Sekarang Sebelum Kehabisan!</a>
+            <a class="btn btn-soft js-wa" href="#" data-product="Paket E-book REALYODA TALE">Pesan via WhatsApp</a>
+          </div>
+          <p class="trust-line">Tersisa 7 produk lagi hari ini · Promo terbatas untuk pembelian pertama</p>
+        </div>
+        <div class="hero-art hero-book-wrap reveal">
+          <div class="art-halo"></div>
+          <div class="storybook-slider" aria-label="Slider cerita REALYODA TALE">
+            <button class="book-arrow book-prev" type="button" aria-label="Cerita sebelumnya">‹</button>
+            <div class="book-stage">
+              <article class="book-page active"><img class="scene-img" src="assets/petualanganSikecil.jpg" alt="Petualangan Si Kecil" loading="lazy" decoding="async"></article>
+              <article class="book-page"><img class="scene-img" src="assets/AjaibnyaBersyukur.jpg" alt="Ajaibnya Bersyukur" loading="lazy" decoding="async"></article>
+              <article class="book-page"><img class="scene-img" src="assets/indahnyaPersahabatan.jpg" alt="Persahabatan" loading="lazy" decoding="async"></article>
+              <article class="book-page"><img class="scene-img" src="assets/MimpiSiKecil.jpg" alt="Mimpi Si Kecil" loading="lazy" decoding="async"></article>
+            </div>
+            <button class="book-arrow book-next" type="button" aria-label="Cerita berikutnya">›</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container benefits-strip reveal">
+        <article><span>🎨</span><div><h3>Cerita Menarik</h3><p>Bahasa sederhana, penuh imajinasi.</p></div></article>
+        <article><span>🌱</span><div><h3>Edukasi Bermakna</h3><p>Nilai moral dalam setiap cerita.</p></div></article>
+        <article><span>🤗</span><div><h3>Bonding Orang Tua &amp; Anak</h3><p>Teman terbaik untuk waktu bersama.</p></div></article>
+        <article><span>🌙</span><div><h3>Bisa Dibaca Kapan Saja</h3><p>Praktis di semua perangkat.</p></div></article>
+      </div>
+    </section>
+
+    <section class="features section-pad" id="manfaat">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Manfaat</span>
+          <h2>Mengapa Anak Suka REALYODA TALE?</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal"><span class="feature-icon">✨</span><h3>Meningkatkan Imajinasi Anak</h3><p>Kisah visual membantu anak membayangkan dunia baru dengan gembira.</p></article>
+          <article class="feature-card reveal"><span class="feature-icon">📚</span><h3>Edukasi Bermakna</h3><p>Setiap cerita memuat pesan positif yang dekat dengan keseharian anak.</p></article>
+          <article class="feature-card reveal"><span class="feature-icon">💛</span><h3>Bonding Orang Tua &amp; Anak</h3><p>Membaca bersama terasa hangat, ringan, dan jadi rutinitas yang ditunggu.</p></article>
+          <article class="feature-card reveal"><span class="feature-icon">📱</span><h3>Bisa Dibaca Kapan Saja</h3><p>Format digital mudah dibuka di ponsel, tablet, laptop, atau komputer.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="products section-pad" id="koleksi">
+      <div class="container">
+        <div class="section-row reveal">
+          <div>
+            <span class="eyebrow">Koleksi E-book</span>
+            <h2>✨ Bangun Kedekatan dengan Anak Lewat Cerita Penuh Makna</h2>
+            <p class="section-subtitle">Promo terbatas hanya untuk pembelian pertama</p>
+          </div>
+          <a href="koleksi.html" class="tiny-link">Lihat Semua →</a>
+        </div>
+        <div class="product-carousel product-snap reveal" aria-label="Slider koleksi e-book">
+          <button class="carousel-btn prev" type="button" aria-label="Produk sebelumnya">‹</button>
+          <div class="carousel-viewport">
+            <div class="product-track">
+              <article class="product-card" data-product="Petualangan Si Kecil">
+                <div class="product-media"><img src="assets/petualanganSikecil.jpg" alt="Petualangan Si Kecil" loading="lazy" decoding="async"></div>
+                <div class="product-body"><h3>Petualangan Si Kecil</h3><p>Kisah petualangan seru yang mengajarkan keberanian dan percaya diri.</p><div class="price"><del>Rp59.000</del><strong>Rp29.500</strong><em>-50%</em></div><a class="order-btn js-wa" href="#" data-product="Petualangan Si Kecil">Pesan via WhatsApp</a></div>
+              </article>
+              <article class="product-card" data-product="Ajaibnya Bersyukur">
+                <div class="product-media"><img src="assets/AjaibnyaBersyukur.jpg" alt="Ajaibnya Bersyukur" loading="lazy" decoding="async"></div>
+                <div class="product-body"><h3>Ajaibnya Bersyukur</h3><p>Belajar bersyukur lewat cerita manis yang dekat dengan kehidupan sehari-hari.</p><div class="price"><del>Rp59.000</del><strong>Rp29.500</strong><em>-50%</em></div><a class="order-btn js-wa" href="#" data-product="Ajaibnya Bersyukur">Pesan via WhatsApp</a></div>
+              </article>
+              <article class="product-card" data-product="Persahabatan">
+                <div class="product-media"><img src="assets/indahnyaPersahabatan.jpg" alt="Persahabatan" loading="lazy" decoding="async"></div>
+                <div class="product-body"><h3>Persahabatan</h3><p>Kisah tentang arti persahabatan, tolong-menolong, dan saling menghargai.</p><div class="price"><del>Rp59.000</del><strong>Rp29.500</strong><em>-50%</em></div><a class="order-btn js-wa" href="#" data-product="Persahabatan">Pesan via WhatsApp</a></div>
+              </article>
+              <article class="product-card" data-product="Mimpi Si Kecil">
+                <div class="product-media"><img src="assets/MimpiSiKecil.jpg" alt="Mimpi Si Kecil" loading="lazy" decoding="async"></div>
+                <div class="product-body"><h3>Mimpi Si Kecil</h3><p>Menginspirasi anak untuk berani bermimpi dan tekun meraihnya.</p><div class="price"><del>Rp59.000</del><strong>Rp29.500</strong><em>-50%</em></div><a class="order-btn js-wa" href="#" data-product="Mimpi Si Kecil">Pesan via WhatsApp</a></div>
+              </article>
+            </div>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Produk berikutnya">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="tentang">
+      <div class="container about-grid">
+        <div class="about-copy reveal"><span class="eyebrow">Tentang Kami</span><h2>Cerita kecil untuk pelajaran besar.</h2><p>REALYODA TALE hadir untuk menemani orang tua dalam memberikan bacaan berkualitas bagi anak-anak. Kami percaya cerita yang dibacakan hari ini akan menjadi pelajaran berharga untuk masa depan.</p></div>
+        <div class="about-cards">
+          <article class="mini-card reveal"><span>💎</span><h3>Konten Berkualitas</h3><p>Ditulis dengan nilai edukatif dan moral yang baik.</p></article>
+          <article class="mini-card reveal"><span>👶</span><h3>Aman untuk Anak</h3><p>Bahasa positif, runtut, dan bebas konten negatif.</p></article>
+          <article class="mini-card reveal"><span>💗</span><h3>Dibuat dengan Cinta</h3><p>Setiap e-book disusun seperti untuk anak sendiri.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section-pad" id="testimoni">
+      <div class="container">
+        <div class="section-heading reveal"><span class="eyebrow">Testimoni</span><h2>Apa Kata Mereka?</h2></div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal"><div class="person"><span>IR</span><div><h3>Ibu Rina</h3><p>★★★★★</p></div></div><p>Anak saya jadi suka baca sebelum tidur. Cerita-ceritanya bagus dan penuh makna.</p></article>
+          <article class="testimonial-card reveal"><div class="person"><span>KD</span><div><h3>Kak Dita</h3><p>★★★★★</p></div></div><p>Desainnya lucu, bahasanya mudah dipahami anak. Worth it banget!</p></article>
+          <article class="testimonial-card reveal"><div class="person"><span>MA</span><div><h3>Mas Arif</h3><p>★★★★★</p></div></div><p>Saya jadi nostalgia masa kecil. Ceritanya keren, anak saya juga suka.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section-pad" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-heading reveal"><span class="eyebrow">FAQ</span><h2>Pertanyaan yang Sering Diajukan</h2></div>
+        <div class="accordion reveal">
+          <button class="faq-item">Bagaimana cara membeli e-book?<span>+</span></button><div class="faq-panel">Klik tombol WhatsApp, pilih e-book, lalu tim kami akan membantu proses pemesanan.</div>
+          <button class="faq-item">Apakah e-book bisa dibaca di semua perangkat?<span>+</span></button><div class="faq-panel">Bisa. File digital dapat dibuka melalui ponsel, tablet, laptop, atau komputer.</div>
+          <button class="faq-item">Apakah e-book bisa dibagikan ke orang lain?<span>+</span></button><div class="faq-panel">E-book hanya untuk pembeli. Untuk hadiah, hubungi kami agar dibuatkan pesanan terpisah.</div>
+          <button class="faq-item">Apakah ada garansi jika file tidak bisa dibuka?<span>+</span></button><div class="faq-panel">Ada. Tim kami siap membantu sampai file dapat dibuka dengan baik.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container cta-content reveal">
+        <div><h2>Dapatkan Sekarang Sebelum Kehabisan!</h2><p>Promo terbatas hanya untuk pembelian pertama · Sudah dibaca oleh 1.000+ orang tua</p></div>
+        <a class="btn btn-whatsapp js-wa" href="#" data-product="Paket E-book REALYODA TALE">Chat via WhatsApp Sekarang</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="index.html"><span class="brand-icon">📖</span><span><strong>REALYODA TALE</strong><small>Cerita hari ini, pelajaran berharga.</small></span></a><div class="socials"><a href="#">ig</a><a href="#">tt</a><a href="#">yt</a></div></div>
+      <div><h3>Menu</h3><a href="index.html">Beranda</a><a href="koleksi.html">Koleksi</a><a href="manfaat.html">Manfaat</a><a href="testimoni.html">Testimoni</a><a href="tentang.html">Tentang Kami</a><a href="faq.html">FAQ</a></div>
+      <div><h3>Bantuan</h3><a href="#">Cara Pembelian</a><a href="#">Kebijakan Privasi</a><a href="#">Syarat &amp; Ketentuan</a></div>
+      <div><h3>Hubungi Kami</h3><p>WhatsApp<br>0838-4051-0687</p><p>Email<br>hello@realyodatale.id</p></div>
+    </div>
+    <p class="copyright">© 2026 REALYODA TALE. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
