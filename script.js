@@ -1,5 +1,4 @@
 const WA_NUMBER = "6283840510687";
-const FIRST_PURCHASE_KEY = "firstPurchase";
 
 let modal = document.getElementById("discountModal");
 let closeModal = document.getElementById("closeModal");
@@ -28,15 +27,16 @@ function ensureDiscountModal() {
       <div class="discount-modal" role="dialog" aria-modal="true" aria-labelledby="discountTitle">
         <button class="modal-close" id="closeModal" aria-label="Tutup popup">&times;</button>
         <div class="gift-box">🎉</div>
-        <span class="discount-pill">50% OFF</span>
-        <h2 id="discountTitle">🎉 Diskon Spesial 50% Hari Ini!</h2>
-        <p>Khusus pembelian pertama, dapatkan potongan 50% untuk semua e-book pilihan</p>
+        <span class="discount-pill">99% OFF</span>
+        <h2 id="discountTitle">🎉 PROMO SPESIAL HARI INI!</h2>
+        <p>Dapatkan E-book Storytelling Anak Premium hanya Rp1.000 untuk pembelian pertama!</p>
+        <p class="popup-support">Ribuan orang tua sudah mulai membangun kebiasaan membaca anak dengan REALYODA TALE</p>
         <div class="urgency-box">
-          <strong>🔥 Diskon akan berakhir dalam <span id="countdownTimer">10:00</span> menit!</strong>
-          <span id="stockText">Tersisa 7 produk lagi hari ini</span>
+          <strong>⚠ Promo terbatas hari ini saja</strong>
+          <span>Kuota promo terbatas</span>
         </div>
-        <a class="btn btn-coral modal-cta" href="${buildWhatsAppUrl("Paket E-book REALYODA TALE")}" target="_blank" rel="noopener">Ambil Diskon Sekarang</a>
-        <small>Promo terbatas hanya untuk pembelian pertama</small>
+        <a class="btn btn-coral modal-cta" href="${buildWhatsAppUrl("Paket E-book REALYODA TALE")}" target="_blank" rel="noopener">Ambil Promo Rp1.000 Sekarang</a>
+        <small>Sudah dipercaya 1.000+ keluarga Indonesia</small>
       </div>
     </div>`
   );
@@ -52,35 +52,13 @@ function bindModalEvents() {
   });
 }
 
-function startUrgencyTimer() {
-  const timer = document.getElementById("countdownTimer");
-  const stock = document.getElementById("stockText");
-  if (!timer) return;
-
-  let secondsLeft = 10 * 60;
-  if (stock) stock.textContent = `Tersisa ${Math.floor(Math.random() * 4) + 5} produk lagi hari ini`;
-
-  const tick = () => {
-    const minutes = String(Math.floor(secondsLeft / 60)).padStart(2, "0");
-    const seconds = String(secondsLeft % 60).padStart(2, "0");
-    timer.textContent = `${minutes}:${seconds}`;
-    secondsLeft = Math.max(0, secondsLeft - 1);
-  };
-
-  tick();
-  setInterval(tick, 1000);
-}
-
 window.addEventListener("load", () => {
-  if (localStorage.getItem(FIRST_PURCHASE_KEY)) return;
   ensureDiscountModal();
 
   setTimeout(() => {
     modal.classList.add("show");
     modal.setAttribute("aria-hidden", "false");
-    localStorage.setItem(FIRST_PURCHASE_KEY, "visited");
-    startUrgencyTimer();
-  }, 450);
+  }, 700);
 });
 
 function hideModal() {
